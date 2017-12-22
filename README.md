@@ -25,7 +25,7 @@ Now you can set up your IDE.
 2. Change the name of the folder to match the desired name of your project.
 3. Delete the source folder in the base.
 4. Open your current project in file explorer.
-5. Copy over your project sources (the `src` folder) to the new base. You can also copy over any text files your project may have. *Do not copy libraries yet. Do not copy any Gradle or IDE files.*
+5. Copy over your project sources (the `src` folder) to the new base. Make sure all the java files are in `src/main/java` if they are not. You can also copy over any text files your project may have. *Do not copy libraries yet. Do not copy any Gradle or IDE files.*
 6. Copy any jar libraries you have to the `libs` folder.
 7. Open `build.gradle` in a text editor. If your team number is not 555, change the `TEAM` variable to your team number.
 8. In the `ROBOT_CLASS` variable, enter the location of your robot's main class.
