@@ -31,6 +31,8 @@ That's all you need to add a build task. You should repeat steps 8-11 for the fo
 - Smart Dashboard (smartDashboard)
 - Offline deploy (build deploy --offline)
 
+Once you've finished, these should all appear in the run drop down menu on the toolbar.
+
 ## Eclipse Set Up
 1. Clone the project. This does not have to be in your Eclipse workspace.
 2. Double click `setup_eclipse.bat`. This will generate files all the Eclipse specific files for the project. Alternatively, you can run `./gradlew eclipse` in the project directory on either Powershell or a Linux shell.
@@ -56,6 +58,13 @@ That's all you need to add a build task. You should repeat steps 9-13 for the fo
 - Deploy (deploy)
 - Smart Dashboard (smartDashboard)
 - Offline Deploy (build deploy --offline)
+
+To get these to show in Eclipse's run dropdown, you either need to have ran the configuration from the set up menu or you need to specify them as a "favorite". Here's the steps to do this:
+
+1. Head to run configurations.
+2. Click on the task you want to pin.
+3. Go over to the `Common` tab
+4. Tick the box in `Display in favorites menu` next to `Run`.
 
 ## GradleRIO Command Reference
 Here's a collection of some useful GradleRIO commands and tips for development. Reading the full documentation [here](https://github.com/Open-RIO/GradleRIO) is recommended.
