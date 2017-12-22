@@ -5,8 +5,8 @@ A blank FRC GradleRIO project for internal use by Team 555. The only real improv
 ## Table of Contents
 1. [Setting up a new project](#setting-up-a-new-project)
 2. [Migrating an existing project](#migrating-an-existing-project)
-3. [IntelliJ set Up](#intellij-set-up)
-4. [Eclipse set Up](#eclipse-set-up)
+3. [IntelliJ set up](#intellij-set-up)
+4. [Eclipse set up](#eclipse-set-up)
 5. [GradleRIO command reference](#gradlerio-command-reference)
 
 ## Setting up a new project
