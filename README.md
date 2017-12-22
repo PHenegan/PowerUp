@@ -1,8 +1,13 @@
-# FRCBase #
+# FRCBase
 
 A blank FRC GradleRIO project for internal use by Team 555. The only real improvements of this quickstart over GradleRIO is having a libs folder which this project automatically reads from. We've also done some tweaks to make set up easier, including this step-by-step documentation.
 
-## IntelliJ Set Up ##
+## Table of Contents
+1. [IntelliJ Set Up](#intellij-set-up)
+2. [Eclipse Set Up](#eclipse-set-up)
+3. [GradleRIO Command Reference](#gradlerio-command-reference)
+
+## IntelliJ Set Up
 1. Clone the project.
 2. Double click `setup_intellij.bat`. This will generate files all the IntelliJ specific files for the project. Alternatively, you can run `./gradlew idea` in the project directory on either Powershell or a Linux shell.
 3. Double click the `FRCBase.ipr` file which was just generated. IntelliJ should open the project.
@@ -26,7 +31,7 @@ That's all you need to add a build task. You should repeat steps 8-11 for the fo
 - Smart Dashboard (smartDashboard)
 - Offline deploy (build deploy --offline)
 
-## Eclipse Set Up ##
+## Eclipse Set Up
 1. Clone the project. This does not have to be in your Eclipse workspace.
 2. Double click `setup_eclipse.bat`. This will generate files all the Eclipse specific files for the project. Alternatively, you can run `./gradlew eclipse` in the project directory on either Powershell or a Linux shell.
 3. Open Eclipse.
@@ -52,7 +57,7 @@ That's all you need to add a build task. You should repeat steps 9-13 for the fo
 - Smart Dashboard (smartDashboard)
 - Offline Deploy (build deploy --offline)
 
-## GradleRIO Command Reference ##
+## GradleRIO Command Reference
 Here's a collection of some useful GradleRIO commands and tips for development. Reading the full documentation [here](https://github.com/Open-RIO/GradleRIO) is recommended.
 
 - `build` will build your code.
