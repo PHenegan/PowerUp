@@ -2,7 +2,7 @@
 
 A blank FRC GradleRIO project for internal use by Team 555. The only real improvements of this quickstart over GradleRIO is having a libs folder which this project automatically reads from. We've also done some tweaks to make set up easier, including this step-by-step documentation.
 
-## IntelliJ set up ##
+## IntelliJ Set Up ##
 1. Clone the project
 2. Double click `setup_intellij.bat`. This will generate files all the IntelliJ specific files for the project.
 3. Double click the `FRCBase.ipr` file which was just generated. IntelliJ should open the project.
