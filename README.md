@@ -3,9 +3,34 @@
 A blank FRC GradleRIO project for internal use by Team 555. The only real improvements of this quickstart over GradleRIO is having a libs folder which this project automatically reads from. We've also done some tweaks to make set up easier, including this step-by-step documentation.
 
 ## Table of Contents
-1. [IntelliJ Set Up](#intellij-set-up)
-2. [Eclipse Set Up](#eclipse-set-up)
-3. [GradleRIO Command Reference](#gradlerio-command-reference)
+1. [Setting up a new project](#setting-up-a-new-project)
+2. [Migrating an existing project](#migrating-an-existing-project)
+3. [IntelliJ Set Up](#intellij-set-up)
+4. [Eclipse Set Up](#eclipse-set-up)
+5. [GradleRIO Command Reference](#gradlerio-command-reference)
+
+## Setting up a new project
+1. Download the latest release and unzip it.
+2. Change the name of the folder to match the desired name of your project.
+
+That's all you have to do if your team number is 555. If it's not, follow these steps:
+
+3. Open `build.gradle` in a text editor. Change 555 in the `TEAM` variable and the `ROBOT_CLASS` variable to what your team number is.
+4. In the source files, refactor the package team number to your own.
+
+Now you can set up your IDE.
+
+## Migrating an existing project
+1. Download the latest release and unzip it.
+2. Change the name of the folder to match the desired name of your project.
+3. Delete the source folder in the base.
+4. Open your current project in file explorer.
+5. Copy over your project sources (the `src` folder) to the new base. You can also copy over any text files your project may have. *Do not copy libraries yet. Do not copy any Gradle or IDE files.*
+6. Copy any jar libraries you have to the `libs` folder.
+7. Open `build.gradle` in a text editor. If your team number is not 555, change the `TEAM` variable to your team number.
+8. In the `ROBOT_CLASS` variable, enter the location of your robot's main class.
+
+Now you can set up your IDE.
 
 ## IntelliJ Set Up
 1. Clone the project.
