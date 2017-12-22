@@ -4,7 +4,7 @@ A blank FRC GradleRIO project for internal use by Team 555. The only real improv
 
 ## IntelliJ Set Up ##
 1. Clone the project.
-2. Double click `setup_intellij.bat`. This will generate files all the IntelliJ specific files for the project.
+2. Double click `setup_intellij.bat`. This will generate files all the IntelliJ specific files for the project. Alternatively, you can run `./gradlew idea` in the project directory on either Powershell or a Linux shell.
 3. Double click the `FRCBase.ipr` file which was just generated. IntelliJ should open the project.
 4. Once IntelliJ is opened, a tooltip should open in the bottom right which says `Unlinked gradle project?`. Click `Import gradle project`.
 5. Make sure `Use default gradle wrapper` is selected, then click `Finish`.
@@ -28,7 +28,7 @@ That's all you need to add a build task. You should repeat steps 8-11 for the fo
 
 ## Eclipse Set Up ##
 1. Clone the project. This does not have to be in your Eclipse workspace.
-2. Double click `setup_eclipse.bat`. This will generate files all the Eclipse specific files for the project.
+2. Double click `setup_eclipse.bat`. This will generate files all the Eclipse specific files for the project. Alternatively, you can run `./gradlew eclipse` in the project directory on either Powershell or a Linux shell.
 3. Open Eclipse.
 4. From the menu bar, click File > Import.
 5. From the drop-down menu, expand Gradle and click `Existing Gradle Projects`.
@@ -51,3 +51,13 @@ That's all you need to add a build task. You should repeat steps 9-13 for the fo
 - Deploy (deploy)
 - Smart Dashboard (smartDashboard)
 - Offline Deploy (build deploy --offline)
+
+## GradleRIO Command Reference ##
+Here's a collection of some useful GradleRIO commands and tips for development. Reading the full documentation [here](https://github.com/Open-RIO/GradleRIO) is recommended.
+
+- `build` will build your code.
+- `deploy` will build and deploy your code.
+- `riolog` will display the RoboRIO console output.
+- `smartDashboard` will launch Smart Dashboard
+
+You can chain multiple commands in your build configuration if you so desire by separating your build tasks with a space like `deploy smartDashboard` or `deploy riolog`.
