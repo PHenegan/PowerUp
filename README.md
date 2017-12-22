@@ -5,9 +5,9 @@ A blank FRC GradleRIO project for internal use by Team 555. The only real improv
 ## Table of Contents
 1. [Setting up a new project](#setting-up-a-new-project)
 2. [Migrating an existing project](#migrating-an-existing-project)
-3. [IntelliJ Set Up](#intellij-set-up)
-4. [Eclipse Set Up](#eclipse-set-up)
-5. [GradleRIO Command Reference](#gradlerio-command-reference)
+3. [IntelliJ set Up](#intellij-set-up)
+4. [Eclipse set Up](#eclipse-set-up)
+5. [GradleRIO command reference](#gradlerio-command-reference)
 
 ## Setting up a new project
 1. Download the latest release and unzip it.
@@ -32,7 +32,7 @@ Now you can set up your IDE.
 
 Now you can set up your IDE.
 
-## IntelliJ Set Up
+## IntelliJ set up
 1. Clone the project.
 2. Double click `setup_intellij.bat`. This will generate files all the IntelliJ specific files for the project. Alternatively, you can run `./gradlew idea` in the project directory on either Powershell or a Linux shell.
 3. Double click the `FRCBase.ipr` file which was just generated. IntelliJ should open the project.
@@ -58,7 +58,7 @@ That's all you need to add a build task. You should repeat steps 8-11 for the fo
 
 Once you've finished, these should all appear in the run drop down menu on the toolbar.
 
-## Eclipse Set Up
+## Eclipse set up
 1. Clone the project. This does not have to be in your Eclipse workspace.
 2. Double click `setup_eclipse.bat`. This will generate files all the Eclipse specific files for the project. Alternatively, you can run `./gradlew eclipse` in the project directory on either Powershell or a Linux shell.
 3. Open Eclipse.
@@ -91,7 +91,7 @@ To get these to show in Eclipse's run dropdown, you either need to have ran the 
 3. Go over to the `Common` tab
 4. Tick the box in `Display in favorites menu` next to `Run`.
 
-## GradleRIO Command Reference
+## GradleRIO command reference
 Here's a collection of some useful GradleRIO commands and tips for development. Reading the full documentation [here](https://github.com/Open-RIO/GradleRIO) is recommended.
 
 - `build` will build your code.
