@@ -36,7 +36,7 @@ Now you can set up your IDE.
 ## IntelliJ set up
 1. Make sure IntelliJ is closed if it is not already, then clone the project.
 2. Double click `setup_intellij.bat`. This will generate files all the IntelliJ specific files for the project. Alternatively, you can run `./gradlew idea` in the project directory on either Powershell or a Linux shell.
-3. Double click the `FRCBase.ipr` file which was just generated. IntelliJ should open the project.
+3. Double click the `FRCBase.ipr` file which was just generated. IntelliJ should open the project. Sometimes `ipr` files may not be associated with IntelliJ. If this is the case, make sure to use the Windows open file menu to open the file with the IntelliJ exe. If this does not work, you can also open IntelliJ and open the project in the open project menu.
 4. Once IntelliJ is opened, a tooltip should open in the bottom right which says `Unlinked gradle project?`. Click `Import gradle project`.
 5. Make sure `Use default gradle wrapper` is selected, then click `Finish`.
 6. From the menu bar, click View > Tool Windows > Project. (Or press Alt+1).
