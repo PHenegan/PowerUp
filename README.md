@@ -7,7 +7,8 @@ A blank FRC GradleRIO project for internal use by Team 555. The only real improv
 2. [Migrating an existing project](#migrating-an-existing-project)
 3. [IntelliJ set up](#intellij-set-up)
 4. [Eclipse set up](#eclipse-set-up)
-5. [GradleRIO command reference](#gradlerio-command-reference)
+5. [Updating GradleRIO](#updating-gradlerio)
+6. [GradleRIO command reference](#gradlerio-command-reference)
 
 ## Setting up a new project
 1. Download the latest release and unzip it.
@@ -91,6 +92,22 @@ To get these to show in Eclipse's run dropdown, you either need to have ran the 
 3. Go over to the `Common` tab
 4. Tick the box in `Display in favorites menu` next to `Run`.
 
+## Updating GradleRIO
+To upgrade your version of GradleRIO, you must first upgrade gradle. Near the bottom of your build.gradle, change the wrapper version to the following, and then run `./gradlew wrapper`:
+```gradle
+task wrapper(type: Wrapper) {
+    gradleVersion = '4.4'
+}
+```
+
+Next, replace the version in the plugin line (only change the GradleRIO line):
+```gradle
+plugins {
+    // ... other plugins ...
+    id "jaci.openrio.gradle.GradleRIO" version "2018.01.11"
+}
+```
+
 ## GradleRIO command reference
 Here's a collection of some useful GradleRIO commands and tips for development. Reading the full documentation [here](https://github.com/Open-RIO/GradleRIO) is recommended.
 
@@ -98,6 +115,7 @@ Here's a collection of some useful GradleRIO commands and tips for development. 
 - `deploy` will build and deploy your code.
 - `deploy --offline` will build and deploy your code over ethernet.
 - `riolog` will display the RoboRIO console output.
-- `smartDashboard` will launch Smart Dashboard
+- `shuffleboard` will launch Smart Dashboard.
+- `clean` will clean your project directory.
 
-You can chain multiple commands in your build configuration if you so desire by separating your build tasks with a space like `deploy smartDashboard` or `deploy riolog`.
+You can chain multiple commands in your build configuration if you so desire by separating your build tasks with a space like `deploy shuffleboard` or `deploy riolog`.
